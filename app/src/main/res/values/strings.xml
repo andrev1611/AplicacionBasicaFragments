@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AplicacionBasicaFragments</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment1">Hola Fragmento 01</string>
+    <string name="hello_blank_fragment2">Hola Fragmento 02</string>
 </resources>

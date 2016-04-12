@@ -1,12 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="aplicacionbasicafragments.app.andrevera.com.aplicacionbasicafragments.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Uso de Fragments " />
-</RelativeLayout>
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnFragment1"
+            android:layout_weight="1"
+            android:text="Fragmento 01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnFragment2"
+            android:layout_weight="1"
+            android:text="Fragmento 02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+    <!--
+    <fragment
+        android:name="aplicacionbasicafragments.app.andrevera.com.aplicacionbasicafragments.fragmentUno"
+        android:id="@+id/fruno"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_fragment_uno" />
+    <fragment
+        android:name="aplicacionbasicafragments.app.andrevera.com.aplicacionbasicafragments.fragmentDos"
+        android:id="@+id/frdos"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_fragment_dos" />
+    -->
+</LinearLayout>
